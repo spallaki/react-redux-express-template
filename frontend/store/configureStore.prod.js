@@ -1,5 +1,6 @@
 import { createStore } from 'redux';
 import rootReducer from '../reducers';
+import createHistory from 'history/createBrowserHistory';
 
 export function configureStore(initialState) {
     return createStore(
@@ -7,3 +8,5 @@ export function configureStore(initialState) {
         initialState
     );
 }
+
+export const history = createHistory();
